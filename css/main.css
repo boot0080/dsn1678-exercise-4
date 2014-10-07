@@ -34,8 +34,10 @@ section {
 	background-color: #f8c145;
 }
 
-.spaceship-1 {
+.spaceship {
 	width: 200px;
+	position: relative;
+	margin-top: 100px;
 }
 
 .js-dipper-fade {
@@ -54,5 +56,20 @@ section {
 	}
 	100% {
 		opacity: 1;
+	}
+}
+
+.js-spaceship-fade {
+	-webkit-animation: spaceship-fade 1s linear forwards;
+}
+
+@-webkit-keyframes spaceship-fade {
+	0% {
+		opacity: 0;
+		margin-top: 100px;
+	}
+	100% {
+		opacity: 1;
+		margin-top: 0px;
 	}
 }
