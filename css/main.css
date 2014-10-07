@@ -17,3 +17,42 @@ section {
 .sun {
 	width: 300px;
 }
+
+.sun-section {
+	background: transparent url("../img/mars-pano.jpg") no-repeat center top;
+	background-size: cover;
+}
+
+
+.dipper {
+	width: 200px;
+	opacity: 0;
+}
+
+
+.spaceship-section {
+	background-color: #f8c145;
+}
+
+.spaceship-1 {
+	width: 200px;
+}
+
+.js-dipper-fade {
+	/* Don't forget the other prefixes! */
+	-webkit-animation: dipper-fade 1s linear forwards;
+	/*
+	animation-fill-mode: forwards;
+	Will tell the animation to stay at its end state after complete
+	*/
+}
+
+/* Don't forget the other prefixes! */
+@-webkit-keyframes dipper-fade {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
